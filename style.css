@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, black,yellow);
+}
+#logoBox{
+    width: 30%;
+    height: 100%;
+    float: right;
+}
+#h1header{
+    color: white;
+    float: left;
+    line-height: 100px;
+    padding: 0 15px;
+}
+#Logo{
+
+    height: 100%;
+    border-radius: 10%;
+}
+nav{
+    width: 70%;
+    transform: translate(30%);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    
+
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px; 
+    text-align: center;
+}
+nav a:hover{
+    background-color: yellow;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color:yellow;
+    border: black 3px solid;
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    float: left;
+}
+aside img{
+    width:100% ;
+    height: 50%;
+}
+aside h1{
+    padding: 25px 0;
+    border-bottom: yellow solid 2px ;
+    color: yellow;
+    font-weight: bold;
+    
+}
+article{
+    width: 70%;
+    background-color: black;
+    height: 450px;
+    float: right;
+    position: relative;
+}
+article div{
+    text-align: center;
+    color: yellow;
+    width: 400px;
+    height: 180px;
+    position: absolute;
+    background-color: yellow;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div h1{
+    color: black;
+    border-bottom: rgb(7, 7, 7) 2px solid;
+    padding: 15px;
+    font-weight: bold;
+}
+div p{
+    color: black;
+    font-weight: bold;
+}
+#social{
+    width: 60%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#social img{
+    width: 100%;
+    border-bottom: 2px double yellow;
+    padding-bottom: 15px;
+
+}
+#social img:hover{
+    width: 100%;
+    height: 70%;
+    border-bottom: black;
+}
+@media only screen and (min-width:950px) and (max-width:1070px) {
+    #logoBox{
+        width: 50%;
+    }
+    article{
+        width: 65%;
+    }
+    aside{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:950px) and (min-width:802px){
+#logoBox{
+    width: 50%;
+}
+}
+@media only screen and (max-width:805px){
+    header, main{
+        height: auto;
+    }
+    #logoBox{
+        width: 100%;
+    }
+    #h1header{
+        float: none;
+        text-decoration: none;
+    }
+    #Logo{
+        float: none;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    article{
+        height: 230px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px){
+    nav li{
+        display: block;
+        width: 100%;
+    }
+    #h1header{
+        text-decoration: none;
+    }
+}
+@media only screen and (orientation:landscape){
+    #logoBox{
+        background-color: rgb(2, 2, 2);
+    }
+    #h1header{
+        text-decoration-line: none
+    }
+}
